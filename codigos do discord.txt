@@ -1,0 +1,24 @@
+NLW COPA
+
+Códigos do Discord
+
+- Colocar cartões lado a lado:
+#app {
+  width: fit-content; /fit-content - ajusta as caixas para o tamanho do conteúdo/
+  margin: 52px auto;
+  max-width: 1024px;
+}
+
+#cards {
+  display: flex;
+  gap: 32px;
+  justify-content: center; 
+  flex-wrap: wrap; /força itens ficarem na mesma linha ou se podem quebrar em outras linhas/
+}
+
+- Body, div
+vou tentar explicar melhor, o body é o corpo da sua página, a div é um elemento que agrupa caixas, 
+todas suas caixas estão dentro da primeira div que tem o seletor de identificação app,  id="app" , 
+as suas caixas estão fora dessa primeira div por que o fechamento dela esta na mesma linha que você abriu ela, '' <div id="app"></div>  '',
+ou seja, não tem nada dentro dela, por isso as propriedades do CSS não estão sendo aplicadas, pois você criou um CSS encima de um html vazio,
+assim que sua maquina entendeu seu código.
